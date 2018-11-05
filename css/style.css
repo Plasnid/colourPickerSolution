@@ -7,9 +7,9 @@
     
   */
   :root{
-    --red: 100;
-    --green: 100;
-    --blue: 100;
+    --red: 255;
+    --green: 0;
+    --blue: 0;
   }
 
 
@@ -42,5 +42,6 @@ div>p{
     for each of the r, g and b  we should use the variables that we made above
     eg.  background-color: rgb(var(--blort), var(--fleeb), var(--snood))
   */
+  background-color: rgb(var(--red), var(--green), var(--blue));
   
 }
