@@ -1,0 +1,41 @@
+  /*  TRY IT OUT!!!!!!
+    make a rule for :root and put 3 variables into it:
+     --red, --green, and --blue
+  
+    set each variable to a value between 0 and 255
+    eg. --fleeb: 911;
+    
+  */
+
+
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+div>input{
+  flex: 2;
+}
+div>p, div>label{
+  flex: 1;
+}
+div>p{
+  text-align: center;
+}
+
+
+
+#colorSwatch{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+  /* TRY IT OUT!!!!!!
+    our colour swatch refers to our variables for the background colour
+    make the background-color equal to an rgb()
+    for each of the r, g and b  we should use the variables that we made above
+    eg.  background-color: rgb(var(--blort), var(--fleeb), var(--snood))
+  */
+  
+}

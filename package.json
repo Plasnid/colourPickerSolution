@@ -1,0 +1,23 @@
+{
+  "name": "colourpicker",
+  "version": "1.0.0",
+  "description": "A CSS3 custom variables colour picker",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plasnid/colourPicker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plasnid/colourPicker/issues"
+  },
+  "homepage": "https://github.com/Plasnid/colourPicker#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
