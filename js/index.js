@@ -28,17 +28,14 @@ let updateColor = (e) =>{
 */
 sliders.forEach(slider => {
   slider.value = parseInt(colourSource.getPropertyValue(`--${slider.dataset.color}`));
-  
   /**  TRY IT OUT!
     1.  add an event listener to each slider that:
       a.  looks for change events
-      b.  calls updateColour
+      b.  calls updateColor
     2.  make a variable called fakeEvent which is a new Event for a 'change'
     3.  have the slider call the dispatchEvent function with the fakeEvent variable
   */
   slider.addEventListener("change", updateColor);
   let fakeEvent = new Event("change");
-  slider.dispatchEvent(fakeEvent);
-
-  
+  slider.dispatchEvent(fakeEvent);  
 });
