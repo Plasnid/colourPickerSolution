@@ -15,7 +15,7 @@ let updateColor = (e) =>{
     -it should look something like this!
       eg. document.body.style.setProperty(`--${e.target.dataset.someValue}`, e.target.value);  
   */
-  
+  document.body.style.setProperty(`--${e.target.dataset.color}`, e.target.value);
   e.target.nextElementSibling.innerText = e.target.value;
 }
 
@@ -30,12 +30,15 @@ sliders.forEach(slider => {
   slider.value = parseInt(colourSource.getPropertyValue(`--${slider.dataset.color}`));
   
   /**  TRY IT OUT!
-    1.  add an event listener to eah slider that:
+    1.  add an event listener to each slider that:
       a.  looks for change events
       b.  calls updateColour
     2.  make a variable called fakeEvent which is a new Event for a 'change'
     3.  have the slider call the dispatchEvent function with the fakeEvent variable
   */
+  slider.addEventListener("change", updateColor);
+  let fakeEvent = new Event("change");
+  slider.dispatchEvent(fakeEvent);
 
   
 });
